@@ -28,7 +28,7 @@ twitter_username:
 github_username:  jetp1ane
 
 # Build settings
-theme: minima
+theme: jekyll-theme-dark-reader
 plugins:
   - jekyll-feed
 
