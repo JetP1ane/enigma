@@ -28,7 +28,7 @@ twitter_username:
 github_username:  jetp1ane
 
 # Build settings
-theme: jekyll-theme-dark-reader
+theme: Hacker
 plugins:
   - jekyll-feed
 
