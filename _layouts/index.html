@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+</head>
+<body>
+  <header>
+    <h1>{{ site.title }}</h1>
+    <nav>
+      <ul>
+        <li><a href="{{ "/" | relative_url }}">Home</a></li>
+        <li><a href="{{ "/about" | relative_url }}">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <div class="header-image">
+      <img src="/assets/medium_image.jpg" alt="Header Image">
+    </div>
+    
+    <section class="posts-list">
+      <h2>Latest Posts</h2>
+      {% for post in site.posts %}
+        <article>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+          <p><a href="{{ post.url | relative_url }}">Read more</a></p>
+        </article>
+      {% endfor %}
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; {{ site.author }} {{ site.year }}</p>
+  </footer>
+</body>
+</html>
