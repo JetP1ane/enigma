@@ -4,5 +4,3 @@
 
 layout: home
 ---
-
-![enigma](/assets/enigma_img.png)
