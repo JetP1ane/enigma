@@ -23,7 +23,7 @@ name: James Barnett
 description: >- # this means to ignore newlines until "baseurl:"
   Security Research.
 baseurl: / # the subpath of your site, e.g. /blog
-url: https://blog.en1gma.co # the base hostname & protocol for your site, e.g. http://example.com
+url: https://labs.en1gma.co # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: 
 github_username:  jetp1ane
 
